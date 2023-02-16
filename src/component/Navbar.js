@@ -17,6 +17,7 @@ const Navbar = () => {
                     style={{ color: "white" }}>Happy Valentine's Day</Link>
                 <img
                     src={Heart}
+                    alt="heart"
                     style={{ height: "40px", width: "40px", marginRight: "100px" }}></img>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     {/* <span className="navbar-toggler-icon" style={{ color: "#fff" }}></span> */}

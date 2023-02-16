@@ -1,10 +1,6 @@
 import React from 'react';
 import Loves from '../component/images/loves.jpg'
-import MyVideoComponent from './video';
 
-function showVid() {
-    <MyVideoComponent/>
-}
 const homeContent = () => {
 
     return (
@@ -20,7 +16,7 @@ const homeContent = () => {
                 </div>
                 <div className="container" style={{ display: "flex", justifyContent: "center" }}>
                         <img src={Loves} alt="loves" style={{ width: "250px", border: "5px solid white" }} />
-                        <a class="btn" href="https://youtu.be/HuUXGFaYpGw" target="_blank">Click me!</a>
+                        <a class="btn" href="https://youtu.be/HuUXGFaYpGw" target="_blank" rel="noreferrer">Click me!</a>
                 </div>
             </div>
         </section>
