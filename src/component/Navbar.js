@@ -2,11 +2,12 @@ import React from 'react'
 // React Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Heart from "./images/Heart.webp"
+import Letter from '../component/letter/letter.pdf'
 
 const Navbar = () => {
-    const location = useLocation();
+    // const location = useLocation();
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-dark navbar-default navbar-static-top">
             <div className="container-fluid">
@@ -26,8 +27,11 @@ const Navbar = () => {
 
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ms-auto">
-                        <a className={location.pathname === "/flexiblechorehandlers" ? "nav-item active" : "nav-item"}
-                            style={{ color: "white", marginRight: "50px" }}>
+                        <a 
+                            style={{ color: "white", marginRight: "50px" }}
+                            href={Letter}
+                            rel="noreferrer"
+                            target="_blank">
                             For Simone... Click me!!
                         </a>
                     </ul>
